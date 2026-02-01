@@ -1,0 +1,10 @@
+I didn't know in python, in list if assigned to another
+on change of another list, previous list is affected. 
+
+This same stuff doesn't happen with other data primitive data types. Slicing previous list from start to end for eg
+a = [1,2,3]
+b = a # b is now pointing to same address as a so, on change of b a will be affected.
+
+but if 
+c = a[:]
+c is not pointing to a but rather taking all the contents of a so, change on c doesn't affect a. so from now on if i have to copy a list, i'll use this following method instead of assigning one list to another and risking manipulation. 
