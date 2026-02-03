@@ -28,6 +28,25 @@ for k,v in info.items():
 ####################################
 #Understand Closure
 # A closure is a function that remembers variables from its creation scope, even after that scope is gone. 
+###################################
+# In Python, Scope has following precedence.
+"""
+LEGB:
+Local > Enclosing > Global > Built-in
+"""
+x = 17
+def func2(y):
+    z = x+y
+    return z
 
-def counter():
-    print()
+print(func(3))
+
+PI = 3.1415
+print(PI)
+PI += 4
+print(PI)
+
+from typing import Final
+E: Final = 2.71
+# E+= 10 Now, this works. but it requires to import a module. that's ok.
+
