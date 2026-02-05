@@ -24,7 +24,7 @@ print(friends)
 from typing import Final
 PI:Final = 3.1415 
 print(PI)
-PI+= 1
+# PI+= 1
 
 print(PI)
 ##############################
