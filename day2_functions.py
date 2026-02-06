@@ -1,11 +1,11 @@
 def func(*args):
     print(args)
 #################
-def func2(**kwargs):
+def fun(**kwargs):
     print(kwargs)
 #####################
 func(10,20,30)
-func2(a=10, b=20, c=30)
+fun(a=10, b=20, c=30)
 #####################
 def addNumbers(*number:int): # so see here, now i don't have to worry about how many values to recieve from user. i can accept any number of arguments from user.
     return sum(number)
